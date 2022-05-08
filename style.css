@@ -1,0 +1,167 @@
+/*font-family: 'Catamaran', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    /* HEADING */
+    
+    .TopRow {
+        display: flex;
+        /*flex-direction: column;*/
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-family: 'Catamaran', sans-serif;;
+        margin-right: 30px;
+    }
+    
+    .logo {
+        margin-right: 65%;
+        margin-left: 10px;
+    }
+    
+    .headermenu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        align-items: center;
+        /*oldnav
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        */
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    ul li {
+        display:inline;
+        padding: 14px 16px;
+        list-style-type: none; /* Remove bullets */
+      }
+    
+      /* MAINCONTENT */
+    
+    .centeredmaincontent img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 50%;
+        border-color: plum;
+        border-radius: 75%;
+        border-width: 8px;
+        border-style: dotted;
+        border-bottom-color: mediumvioletred;
+        border-top-color: mediumvioletred;
+      }
+    
+    .centeredmaincontent h1 {
+        color: mediumvioletred;
+        text-decoration: underline plum;
+        text-align: center;
+        font-family: 'Catamaran', sans-serif;   
+        margin-top: 100px;
+    }
+      
+      body{
+          position: relative;
+      }
+    
+    .centeredmaincontent p {
+          margin: auto;
+          margin-top: 80px;
+          width: 50%;
+          border: 2px solid hotpink;
+          padding: 10px;
+          font-family: 'Catamaran', sans-serif;
+      }
+    
+      .asidemaincontent {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 90%;
+        top: 100px;
+        width: 300px;
+        padding: 10px;
+      }
+    
+      .asidemaincontent img {
+          border-radius: 18%;
+      }
+    
+      .asidemaincontent h5 {
+        /* background-color: plum;*/
+         color: mediumvioletred;
+         font-family: 'Catamaran', sans-serif;
+         text-decoration: underline;
+         display: flex;
+         float: right;
+        /* border-style: solid;
+         border-width: .5px;
+         border-color: black;*/
+         padding-right: 5px;
+         padding-left: 5px;
+         margin-top: 5px;
+         /* margin-bottom: 100px; */
+         margin-left: 2%;
+     }
+    
+    .asidemaincontent button {
+        background-color: plum;
+        font-family: 'Catamaran', sans-serif;
+        /* font-display: bold; */
+        position: relative;
+        display: flex;
+        float: right;
+        border-style: solid;
+        border-radius: 10%;
+        border-color: mediumvioletred;
+        padding-right: 5px;
+        padding-left: 8px;
+        padding-top: 1px;
+        width: 65px;
+        /* margin-bottom: 100px; */
+        margin-top: 1px; 
+    }
+    
+    /* .maincontent img,button,h5 {
+       margin-top: auto;
+    } */
+    
+    
+    /* tablet  */
+    
+    @media screen and (min-width: 650px) {
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #open-menu {
+            display: none;
+        }
+        #brand {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        #site-nav {
+            display: flex;
+        }
+    }
+    
+    
+    /* desktop  */
+    
+    @media screen and (min-width: 1100px) {}
